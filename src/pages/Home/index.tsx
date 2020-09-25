@@ -5,9 +5,9 @@ import Usercard from '../../components/Usercard'
 
 import { Container, Title, Content } from './styles'
 
-const Dashboard: React.FC = () => {
+const Home: React.FC = () => {
   return (
-    <Page titlePage="Dashboard">
+    <Page titlePage="Tech Quiz">
       <Container>
         <Title>Users Score</Title>
         <Content>
@@ -32,4 +32,4 @@ const Dashboard: React.FC = () => {
   )
 }
 
-export default Dashboard
+export default Home
