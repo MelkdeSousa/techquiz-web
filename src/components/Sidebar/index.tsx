@@ -13,7 +13,7 @@ const Sidebar: React.FC = () => {
   }
 
   return (
-    <Container>
+    <Container id="sidebar">
       <Profile>
         <Image src="https://api.adorable.io/avatars/285/melk@adorable.io" />
         <Name>Adorable Melk</Name>

@@ -6,6 +6,21 @@ export const Container = styled.aside`
   overflow: hidden;
 
   padding: 1.2rem;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+
+    &.sidebar-on {
+      display: block;
+
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background: #a265e9;
+
+      z-index: 10;
+    }
+  }
 `
 
 export const Profile = styled.div`
@@ -25,11 +40,15 @@ export const Image = styled.img`
 `
 
 export const Name = styled.span`
-  color: #464646;
   font-size: 1.6rem;
+  color: #464646;
   font-weight: 500;
   margin-top: 2rem;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    color: #fff;
+  }
 `
 
 export const Actions = styled.div`
@@ -43,7 +62,7 @@ export const Actions = styled.div`
 export const Logout = styled.button`
   width: auto;
   height: auto;
-  
+
   padding: 0.5rem 1rem;
   border: 0;
   border-radius: 20px;
